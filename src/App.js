@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import Api2 from './api/Api2'
-
-import './styles.css';
 import SwiperSlider from './components/SwiperSlider';
 import Weather from './components/Weather';
+
+import './styles.css';
 
 function App() {
   const [inputValue, setInputValue] = useState('');

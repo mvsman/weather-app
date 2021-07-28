@@ -60,7 +60,7 @@ body {
 }
 .window {
   height: 600px;
-  background-color: #fff;
+  background-color: #0161007a;
   box-shadow: 1px 1px 3px -1px #000;
   border-radius: 15px;
   display: flex;
@@ -71,11 +71,26 @@ body {
   padding: 20px 10px;
 }
 .window-inner {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 5%;
   transition: 1s;
 }
 .window-title {
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(110, 110, 110, 0.3);
+}
+.window-title > p {
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.window-time {
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 10%;
 }
 .temp {
   display: flex;
@@ -88,8 +103,9 @@ body {
 }
 .info {
   display: flex;
-  justify-content: space-between;
-  color: rgb(110, 110, 110);
+  justify-content: space-around;
+  color: #3a3a3a;
+  margin-top: 5%;
 }
 .info-wind {
   display: flex;
@@ -105,6 +121,7 @@ body {
   flex-direction: column;
   max-width: 375px;
   height: 250px;
+  cursor: grab;
 }
 .swiper-container {
   width: 355px;
@@ -114,6 +131,7 @@ body {
   align-items: baseline;
   align-self: center;
   border-radius: 5px;
+  background-color: darkseagreen;
 }
 .slide {
   display: grid;
@@ -127,8 +145,8 @@ body {
   border-right: 1px solid hsla(0, 0%, 100%, 0.25);
   display: flex;
   flex-direction: column;
-  padding: 0 5px;
-  width: 60px;
+  width: 72px;
+  height: 80%;
 }
 .slide-item > img {
   width: 65px;
@@ -147,5 +165,5 @@ body {
   margin-bottom: 20px;
   margin-top: 10px;
   height: 20px;
-  top: 65%;
+  top: 82%;
 }

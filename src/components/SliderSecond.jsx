@@ -9,49 +9,54 @@ function SliderSecond({ city }) {
   return (
     <>
       <div className="slide-item">
+        <div className="time">{city.list[8].dt_txt.slice(5, 10).replace('-', '/')}</div>
         <img
-          src={`https://openweathermap.org/img/wn/${city.list[1].weather[0].icon}@2x.png`}
-          alt="city.list[1].weather[0].description"
+          src={`https://openweathermap.org/img/wn/${city.list[8].weather[0].icon}@2x.png`}
+          alt="city.list[8].weather[0].description"
         />
-        <div>{Math.ceil(city.list[1].main.temp_max)}&deg;</div>
-        <div>{Math.floor(city.list[1].main.temp_min)}&deg;</div>
-        <div>{city.list[1].main.humidity}%</div>
+        <div>{Math.ceil(city.list[8].main.temp_max)}&deg;</div>
+        <div>{Math.floor(city.list[8].main.temp_min)}&deg;</div>
+        <div>{city.list[8].main.humidity}%</div>
       </div>
       <div className="slide-item">
+        <div className="time">{city.list[16].dt_txt.slice(5, 10).replace('-', '/')}</div>
         <img
-          src={`https://openweathermap.org/img/wn/${city.list[2].weather[0].icon}@2x.png`}
-          alt="city.list[2].weather[0].description"
+          src={`https://openweathermap.org/img/wn/${city.list[16].weather[0].icon}@2x.png`}
+          alt="city.list[16].weather[0].description"
         />
-        <div>{Math.ceil(city.list[2].main.temp_max)}&deg;</div>
-        <div>{Math.floor(city.list[2].main.temp_min)}&deg;</div>
-        <div>{city.list[2].main.humidity}%</div>
+        <div>{Math.ceil(city.list[16].main.temp_max)}&deg;</div>
+        <div>{Math.floor(city.list[16].main.temp_min)}&deg;</div>
+        <div>{city.list[16].main.humidity}%</div>
       </div>
       <div className="slide-item">
+        <div className="time">{city.list[24].dt_txt.slice(5, 10).replace('-', '/')}</div>
         <img
-          src={`https://openweathermap.org/img/wn/${city.list[3].weather[0].icon}@2x.png`}
-          alt="city.list[3].weather[0].description"
+          src={`https://openweathermap.org/img/wn/${city.list[24].weather[0].icon}@2x.png`}
+          alt="city.list[24].weather[0].description"
         />
-        <div>{Math.ceil(city.list[3].main.temp_max)}&deg;</div>
-        <div>{Math.floor(city.list[3].main.temp_min)}&deg;</div>
-        <div>{city.list[3].main.humidity}%</div>
+        <div>{Math.ceil(city.list[24].main.temp_max)}&deg;</div>
+        <div>{Math.floor(city.list[24].main.temp_min)}&deg;</div>
+        <div>{city.list[24].main.humidity}%</div>
       </div>
       <div className="slide-item">
+        <div className="time">{city.list[32].dt_txt.slice(5, 10).replace('-', '/')}</div>
         <img
-          src={`https://openweathermap.org/img/wn/${city.list[4].weather[0].icon}@2x.png`}
-          alt="city.list[4].weather[0].description"
+          src={`https://openweathermap.org/img/wn/${city.list[32].weather[0].icon}@2x.png`}
+          alt="city.list[32].weather[0].description"
         />
-        <div>{Math.ceil(city.list[4].main.temp_max)}&deg;</div>
-        <div>{Math.floor(city.list[4].main.temp_min)}&deg;</div>
-        <div>{city.list[4].main.humidity}%</div>
+        <div>{Math.ceil(city.list[32].main.temp_max)}&deg;</div>
+        <div>{Math.floor(city.list[32].main.temp_min)}&deg;</div>
+        <div>{city.list[32].main.humidity}%</div>
       </div>
       <div className="slide-item">
+        <div className="time">{city.list[39].dt_txt.slice(5, 10).replace('-', '/')}</div>
         <img
-          src={`https://openweathermap.org/img/wn/${city.list[5].weather[0].icon}@2x.png`}
-          alt="city.list[5].weather[0].description"
+          src={`https://openweathermap.org/img/wn/${city.list[39].weather[0].icon}@2x.png`}
+          alt="city.list[39].weather[0].description"
         />
-        <div>{Math.ceil(city.list[5].main.temp_max)}&deg;</div>
-        <div>{Math.floor(city.list[5].main.temp_min)}&deg;</div>
-        <div>{city.list[5].main.humidity}%</div>
+        <div>{Math.ceil(city.list[39].main.temp_max)}&deg;</div>
+        <div>{Math.floor(city.list[39].main.temp_min)}&deg;</div>
+        <div>{city.list[39].main.humidity}%</div>
       </div>
     </>
   );
