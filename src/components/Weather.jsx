@@ -1,8 +1,10 @@
 function Weather({ city }) {
   const date = new Date();
-  const calc = Math.abs(date.getUTCHours() + city.city.timezone / 3600);
-  const hour = calc >= 24 ? calc - 24 : calc;
-  const time = `${hour < 10 ? '0' + hour : hour}:${date.getUTCMinutes()}`;
+  const calcHour = Math.abs(date.getUTCHours() + city.city.timezone / 3600);
+  const calcMin = date.getUTCMinutes();
+  const minute = calcMin < 10 ? '0' + calcMin : calcMin;
+  const hour = calcHour >= 24 ? calcHour - 24 : calcHour;
+  const time = `${hour < 10 ? '0' + hour : hour}:${minute}`;
   return (
     <div className="window-inner">
       <div className="window-title">

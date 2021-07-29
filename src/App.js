@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
-import Api2 from './api/Api2'
-import SwiperSlider from './components/SwiperSlider';
+import useLocalStorage from './UseLocalStorage';
+import Api from './api/Api';
 import Weather from './components/Weather';
+import SwiperSlider from './components/SwiperSlider';
 
 import './styles.css';
 
 function App() {
   const [inputValue, setInputValue] = useState('');
-  const [city, setCity] = useState({});
+  const [city, setCity] = useLocalStorage('city', {});
 
   const search = async (e) => {
     if(e.key === 'Enter') {
-      const data = await Api2(inputValue)
+      const data = await Api(inputValue)
       setCity(data)
       setInputValue('')
     }
@@ -23,14 +24,19 @@ function App() {
         <input 
           className="search-input" 
           type="text" 
-          placeholder="Поиск..." 
+          placeholder="Search..." 
           value={inputValue}
           onKeyPress={search}
           onChange={e => setInputValue(e.target.value)} 
            />
       </div>
         <div className="window">
-          {city.cod ? <Weather city={city} /> : <p>Введите название города</p>}
+          {city.cod ? 
+          <Weather city={city} /> 
+          : <div className="beforeInit">
+              <p>Enter the name of the city</p>
+              <p>on ENG or RUS keyboard layout</p>
+            </div>}
           {city.cod && <SwiperSlider city={city}/>}
         </div>
     </div>

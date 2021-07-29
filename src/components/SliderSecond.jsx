@@ -9,7 +9,9 @@ function SliderSecond({ city }) {
   return (
     <>
       <div className="slide-item">
-        <div className="time">{city.list[8].dt_txt.slice(5, 10).replace('-', '/')}</div>
+        <div className="time">
+          {`${city.list[8].dt_txt.slice(8, 10)}/${city.list[8].dt_txt.slice(5, 7)}`}
+        </div>
         <img
           src={`https://openweathermap.org/img/wn/${city.list[8].weather[0].icon}@2x.png`}
           alt="city.list[8].weather[0].description"
@@ -19,7 +21,9 @@ function SliderSecond({ city }) {
         <div>{city.list[8].main.humidity}%</div>
       </div>
       <div className="slide-item">
-        <div className="time">{city.list[16].dt_txt.slice(5, 10).replace('-', '/')}</div>
+        <div className="time">
+          {`${city.list[16].dt_txt.slice(8, 10)}/${city.list[16].dt_txt.slice(5, 7)}`}
+        </div>
         <img
           src={`https://openweathermap.org/img/wn/${city.list[16].weather[0].icon}@2x.png`}
           alt="city.list[16].weather[0].description"
@@ -29,7 +33,9 @@ function SliderSecond({ city }) {
         <div>{city.list[16].main.humidity}%</div>
       </div>
       <div className="slide-item">
-        <div className="time">{city.list[24].dt_txt.slice(5, 10).replace('-', '/')}</div>
+        <div className="time">
+          {`${city.list[24].dt_txt.slice(8, 10)}/${city.list[24].dt_txt.slice(5, 7)}`}
+        </div>
         <img
           src={`https://openweathermap.org/img/wn/${city.list[24].weather[0].icon}@2x.png`}
           alt="city.list[24].weather[0].description"
@@ -39,7 +45,9 @@ function SliderSecond({ city }) {
         <div>{city.list[24].main.humidity}%</div>
       </div>
       <div className="slide-item">
-        <div className="time">{city.list[32].dt_txt.slice(5, 10).replace('-', '/')}</div>
+        <div className="time">
+          {`${city.list[32].dt_txt.slice(8, 10)}/${city.list[32].dt_txt.slice(5, 7)}`}
+        </div>
         <img
           src={`https://openweathermap.org/img/wn/${city.list[32].weather[0].icon}@2x.png`}
           alt="city.list[32].weather[0].description"
@@ -49,7 +57,9 @@ function SliderSecond({ city }) {
         <div>{city.list[32].main.humidity}%</div>
       </div>
       <div className="slide-item">
-        <div className="time">{city.list[39].dt_txt.slice(5, 10).replace('-', '/')}</div>
+        <div className="time">
+          {`${city.list[39].dt_txt.slice(8, 10)}/${city.list[39].dt_txt.slice(5, 7)}`}
+        </div>
         <img
           src={`https://openweathermap.org/img/wn/${city.list[39].weather[0].icon}@2x.png`}
           alt="city.list[39].weather[0].description"
