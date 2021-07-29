@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination } from 'swiper';
+import SliderFirst from './SliderFirst';
+import SliderSecond from './SliderSecond';
 
 import 'swiper/swiper-bundle.css';
 import 'swiper/swiper.min.css';
 import 'swiper/components/pagination/pagination.min.css';
-import SliderFirst from './SliderFirst';
-import SliderSecond from './SliderSecond';
 
 SwiperCore.use([Pagination]);
 

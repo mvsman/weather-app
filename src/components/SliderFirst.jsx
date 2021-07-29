@@ -18,7 +18,6 @@ function SliderFirst({ city }) {
   const CT3 = LT3 >= 24 ? LT3 - 24 : LT3;
   const CT4 = LT4 >= 24 ? LT4 - 24 : LT4;
   const CT5 = LT5 >= 24 ? LT5 - 24 : LT5;
-  // const time = CT < 10 ? `0${CT}:00` : `${CT}:00`;
   return (
     <>
       <div className="slide-item">
